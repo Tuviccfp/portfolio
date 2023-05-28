@@ -74,7 +74,7 @@ const PinnedRepo: React.FC<Props> = ({ icon, icon_alt }) => {
               `
             },
             {headers: {
-                Authorization: 'Bearer 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'
+                Authorization: 'Bearer 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'
             }});
             const pinnedRepos = response.data.data.viewer.pinnedItems.edges.map((edge: any) => edge.node)
             setRepo(pinnedRepos)
