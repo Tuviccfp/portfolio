@@ -54,16 +54,16 @@ const socialData: SocialItems[] = [
     url_link: "https://wa.me/+5521964818546",
   },
   {
-    icon: "https://cdn.icon-icons.com/icons2/2716/PNG/512/whatsapp_logo_icon_172797.png",
-    url_link: "https://wa.me/+5521964818546",
+    icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    url_link: "https://github.com/Tuviccfp",
   },
   {
-    icon: "https://cdn.icon-icons.com/icons2/2716/PNG/512/whatsapp_logo_icon_172797.png",
-    url_link: "https://wa.me/+5521964818546",
+    icon: "https://www.svgrepo.com/show/364604/instagram-logo-fill.svg",
+    url_link: "https://www.instagram.com/cordtuvicdev/",
   },
   {
-    icon: "https://cdn.icon-icons.com/icons2/2716/PNG/512/whatsapp_logo_icon_172797.png",
-    url_link: "https://wa.me/+5521964818546",
+    icon: "https://cdn-icons-png.flaticon.com/512/733/733635.png",
+    url_link: "https://twitter.com/DevTuvic",
   },
 ];
 

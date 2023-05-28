@@ -25,7 +25,7 @@ const Icon = styled.img`
     height: 55px;
   }
 }
-  background-color: #7c7c8a;
+  background-color: #e1e1e6;
   border-radius: 5px;
   width: 35px;
   height: 35px;
