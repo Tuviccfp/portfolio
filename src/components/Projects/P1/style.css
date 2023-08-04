@@ -2,9 +2,9 @@
     width: 800px;
     height: 450px;
     @media (max-width: 725px) {
-        width: 70vw;
-        height: 70vh;
-        margin-left: 230px;
+        width: 90vw;
+        height: 90vh;
+        margin-left: 197px;
     }
 }
 /* Indicators position in carousel */
@@ -31,6 +31,6 @@
 }
 .item-video {
 @media (max-width: 725px) {
-    width: 100%;
+    width: 100vw;
 }
 }

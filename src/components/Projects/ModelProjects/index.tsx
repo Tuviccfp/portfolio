@@ -19,12 +19,15 @@ const Container = styled.div`
   justify-content: center;
   @media (max-width: 725px) {
     width: 100vw;
+    height: 100vh;
+    background-color: black;
   }
   .info {
     @media (max-width: 725px) {
-      width: 425px;
-      height: 825px;
+      width: 100vw;
+      height: 100vh;
       margin: 0px;
+      background-color: black;
     }
   }
   .text-info {

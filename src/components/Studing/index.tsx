@@ -7,6 +7,10 @@ const Section = styled.section`
     height: 100vh;
     width: 100vw;
     color: #e1e1e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 725px) {
         height: 900px;
         background-color: black;
