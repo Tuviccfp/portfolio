@@ -52,7 +52,7 @@ const Socials: React.FC<Props> = ({ socialItems }) => {
             return (
             <Item key={index}>
                 <a href={item.url_link}>
-                <Icon src={item.icon} />
+                  <Icon src={item.icon} />
                 </a>
             </Item>          
             )

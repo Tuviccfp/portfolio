@@ -13,7 +13,7 @@ const Container = styled.div``;
 const AnimatedText = styled.p`
   color: #c4c4cc;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.3;
   letter-spacing: 0.1rem;
   word-spacing: 0.1rem;
   width: 30vw;

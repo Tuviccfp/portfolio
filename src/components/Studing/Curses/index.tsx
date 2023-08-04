@@ -3,7 +3,9 @@ import styled from "styled-components"
 const List = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    @media (max-width: 725px) {
+        grid-template-columns: repeat(1, 1fr);  
+    }
 `
 const Image = styled.img`
  width: 180px;

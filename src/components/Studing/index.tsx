@@ -4,19 +4,28 @@ import Graduation from "./Graduation";
 import { curse1, curse2, curse3 } from "./Images";
 
 const Section = styled.section`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    width: 100vw;
     color: #e1e1e6;
+    @media (max-width: 725px) {
+        height: 900px;
+        background-color: black;
+    }
+    .study{
+        width: 70vw;
+    }
 `
 const TitleCurses = styled.h3`
     font-size: 22px;
     text-transform: uppercase;
     color: #e1e1e6;
+    text-align: center;
     margin: auto;
     letter-spacing: 0.1rem;
+    @media (max-width: 725px) {
+        font-size: 20px;
+        text-align: center;
+    }
 `
 // Data items curse.
 const dataCurses: ItemsCurse[] = [
@@ -28,15 +37,22 @@ const dataCurses: ItemsCurse[] = [
 const Studing: React.FC = () => {
     return (
         <Section>
-            <div className="study">
-                <div className="graduation">
-                    <Graduation title="Faculdade Digital Descomplica" text="Ciência da Computação" icon_url="https://cdn-icons-png.flaticon.com/512/42/42972.png"/>
-                </div>
-                <div className="curses">
-                    <TitleCurses style={{textAlign: 'center'}}>Cursos</TitleCurses>
-                    <Curses itemsCurse={dataCurses}/>
-                </div>
-            </div>
+            <center>
+                <div className="study">
+                    <div className="graduation">
+                        <Graduation title="Faculdade Digital Descomplica" text="Ciência da Computação" icon_url="https://cdn-icons-png.flaticon.com/512/42/42972.png"/>
+                    </div>
+
+                    <div className="curses">
+                        <TitleCurses>Cursos</TitleCurses>
+                        <Curses itemsCurse={dataCurses} />
+                    </div>
+
+                    <div style={{textAlign: 'center'}}>
+                        <h5>Para mais informações, acesse meu <a href="#">linkedin</a>.</h5>
+                    </div>
+                </div>    
+            </center>
         </Section>
     )
 }

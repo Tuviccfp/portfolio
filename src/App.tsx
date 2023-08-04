@@ -5,10 +5,10 @@ import Home from './components/Home';
 import Project from './components/Projects';
 import Studing from './components/Studing';
 import Contact from './components/Contact';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [currentComponent, setCurrentComponent] = useState<string>('Início')
+  const [currentComponent, setCurrentComponent] = useState<string>('Início');
   
   const renderComponent = () => {
     switch (currentComponent) {

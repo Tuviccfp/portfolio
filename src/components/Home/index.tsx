@@ -26,46 +26,21 @@ const Subtitle = styled.h5`
 `;
 
 const Test = styled.div`
-white-space: nowrap;
-  overflow: hidden;
-  width: 22em;
-  animation: type 4.3s steps(60, end) infinite; 
+  animation: animate 3.5s linear infinite;
 
-
-  &:nth-child(2){
-    animation: type2 8s steps(60, end) infinite;
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1.2;
+    }
+    100%{
+      opacity: 0;
+    }
   }
-  
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
-  
-  @keyframes type2{
-    0%{width: 0;}
-    50%{width: 0;}
-    100%{ width: 100; } 
 `;
 
-
-// Dados para o componente Socials
-const socialData: SocialItems[] = [
-  {
-    icon: "https://cdn.icon-icons.com/icons2/2716/PNG/512/whatsapp_logo_icon_172797.png",
-    url_link: "https://wa.me/+5521964818546",
-  },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-    url_link: "https://github.com/Tuviccfp",
-  },
-  {
-    icon: "https://www.svgrepo.com/show/364604/instagram-logo-fill.svg",
-    url_link: "https://www.instagram.com/cordtuvicdev/",
-  },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/733/733635.png",
-    url_link: "https://twitter.com/DevTuvic",
-  },
-];
 
 const Home: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
@@ -80,7 +55,6 @@ const Home: React.FC = () => {
         <Title>Victor Cordeiro Fraguas</Title>
         <Subtitle>Full Stack Developer</Subtitle>
       </Test>
-        <Socials socialItems={socialData} />
         <ButtonDefault click={handleClick} width={40} text="Saiba mais"/>
         {isVisible ? <About /> : ''}
     </Section>
@@ -88,3 +62,22 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+// //white-space: nowrap;
+// overflow: hidden;
+// width: 22em;
+// animation: type 4.3s steps(60, end) infinite; 
+
+
+// &:nth-child(2){
+//   animation: type2 8s steps(60, end) infinite;
+// }
+
+// @keyframes type{ 
+//   from { width: 0; } 
+// } 
+
+// @keyframes type2{
+//   0%{width: 0;}
+//   50%{width: 0;}
+//   100%{ width: 100; } 

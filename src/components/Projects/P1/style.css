@@ -1,0 +1,36 @@
+.carousel {
+    width: 800px;
+    height: 450px;
+    @media (max-width: 725px) {
+        width: 70vw;
+        height: 70vh;
+        margin-left: 230px;
+    }
+}
+/* Indicators position in carousel */
+.carousel-indicators {
+    display: none;
+}
+/* Layout dos botões responsáveis por pular entre um slide e outro. */
+.carousel-control-next {
+    height: 385px;
+    border: 2px solid black;
+}
+.carousel-control-next-icon {
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: black;
+}
+.carousel-control-prev {
+    height: 385px;
+}
+.carousel-control-prev-icon {
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: black;
+}
+.item-video {
+@media (max-width: 725px) {
+    width: 100%;
+}
+}

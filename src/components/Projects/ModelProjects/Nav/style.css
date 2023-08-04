@@ -1,0 +1,11 @@
+#dropdown-basic-button {
+    background-color:rgb(225, 225, 230);
+    color: black;
+    width: 204px;
+    margin: auto;
+}
+.dropdown-item {
+    background-color:rgb(225, 225, 230);
+    margin: auto;
+    text-align: center;
+}

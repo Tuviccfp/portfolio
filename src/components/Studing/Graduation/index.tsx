@@ -44,7 +44,7 @@ const Graduation: React.FC<Props> = ({ title, text, icon_url }) => {
         <Image src={icon_url} alt="Icone de um chapéu de formatura" />
         {title}
       </Title>
-      <Text>Curso: {text}</Text>
+      <Text>Graduação: {text}</Text>
     </Container>
   );
 };
